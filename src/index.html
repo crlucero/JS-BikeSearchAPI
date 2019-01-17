@@ -9,15 +9,29 @@
   <body>
     <div class="container">
       <h1>Get Bikes Info</h1>
-      <label for="location">Enter a location: </label>
-      <input type="text" id="location"><br>
-      <label for="miles">Enter distance in miles: </label>
-      <input type="number" id="miles" >
-      <form id="random">
-        <button class="btn-success" id="submit" type ="submit">Get Info</button>
-      </form><hr>
+      <div>
+        <label for="location">Enter a location: </label>
+        <input type="text" id="location"><br>
+        <label for="miles">Enter distance in miles: </label>
+        <input type="number" id="miles" >
+        <form id="random">
+          <button class="btn-success" id="submit" type ="submit">Get Info</button>
+          
+        </form>
+      </div>
+      <div>
+        <label for="color">Search for a bike by color: </label>
+        <input type="text" id="color" >
+        <form id="bikeColor">
+          <button class="btn-success" id="submit" type ="submit">Search</button>
+        </form>
+      </div>
+      <hr>
       <p>Bike Title</p>
       <div id="output" > </div>
+
+      <p>Bike Title by searched color</p>
+      <div id="colorOutput"></div>
     
     </div>
   </body>
